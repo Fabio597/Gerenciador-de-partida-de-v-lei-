@@ -1,7 +1,7 @@
 # Gerenciador de Partidas de Volei
 
 ## Objetivos
-
+A máquina tem como primeira função solicitar e registrar o e-mail do usuário; como segunda função, permitir e identificar a seleção do tipo de conta (Instituição, Técnico ou Jogador); em seguida, exibir os campos de formulário para inserção dos dados solicitados; processar o clique no botão salvar; e, por fim, aguardar e processar a confirmação do cadastro realizada pelo usuário; para a inscrição em campeonatos, a máquina tem como primeira função dar acesso e carregar a área de campeonatos; como segunda função, registrar a seleção do campeonato desejado pelo jogador; e em seguida, processar a ação do usuário de clicar em "Inscrever-se"; já no cadastro de equipes, a máquina tem como primeira função conceder acesso à área de equipes; como segunda função, disponibilizar a opção "Cadastrar Equipe"; em seguida, carregar o formulário para preenchimento dos dados gerais da equipe; permitir a inscrição dos jogadores integrantes; e, por fim, receber o comando de salvar para validar as informações, registrar a equipe na base de dados e emitir a confirmação.
 
 ### Stack Tecnlógico
 - Backend: PHP estruturado com sessões nativas
@@ -12,7 +12,31 @@
 Tratar senhas de usuários com hash bcript
 O sistema deve ter uma página de históricos e manter sempre os logs de qualquer alteração feita por 
 qualquer usuário, para auditorias futuras.
- até a final, registra o resultado e posições.
+-Permite realizar o cadastro de um usuário no sistema
+Ação do ator: Digitar o e-mail
+Ação do ator: Selecionar o tipo de conta
+  Ação do ator: Inserir os dados solicitados
+  Ação do ator: Clicar em salvar
+  Resposta do sistema: Validar os dados
+Resposta do sistema: Salva os dados na base de dado
+  Resposta do sistema: Enviar um email de confirmação
+  Ação do ator: Confirmar o cadastro
+-Permite ao jogador se inscrever em campeonatos disponíveis
+  Ação do ator: Acessar a área de campeonatos
+Ação do ator: Selecionar o campeonato desejado
+  Resposta do sistema: exibir ações do campeonato
+  Ação do ator: Clicar em “Inscrever-se”
+   Resposta do sistema: Verificar dados do jogador
+   -Permite ao técnico cadastrar equipes no sistema
+   Ação do ator: Acessar a área de equipes
+   Ação do ator: Selecionar a opção “Cadastrar Equipe”
+   Resposta do sistema: Exibir o formulário de cadastro
+  Ação do ator: Inserir os dados da equipe
+   Ação do ator: Inserir os jogadores da equipe
+   Ação do ator: Clicar em salvar
+  Resposta do sistema: Validar os dados informados
+   Resposta do sistema: Salvar a equipe na base de dado
+   Resposta do sistema: Exibir a confirmação do cadastro
  
 
 
